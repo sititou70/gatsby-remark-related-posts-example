@@ -14,18 +14,13 @@ npm start
 open `http://localhost:8000/___graphql` and then execute the following query.
 
 ```
-{
+// query
+query {
   allMarkdownRemark {
     nodes {
-      frontmatter {
-        title
-      }
+      fileAbsolutePath
       fields {
-        relatedMarkdownRemarks {
-          frontmatter {
-            title
-          }
-        }
+        relatedFileAbsolutePaths
       }
     }
   }
