@@ -1,0 +1,18 @@
+---
+title: German language
+date: "2021-01-14T00:00:00.000Z"
+description: "German (Deutsch, pronounced [dɔʏtʃ] (About this soundlisten))[nb 4] is a West Germanic language mainly spoken in Central Europe."
+---
+
+German (Deutsch, pronounced [dɔʏtʃ] (About this soundlisten))[nb 4] is a West Germanic language mainly spoken in Central Europe. It is the most widely spoken and official or co-official language in Germany, Austria, Switzerland, Liechtenstein, and South Tyrol in Italy. It is also a co-official language of Luxembourg and Belgium (specifically in the German-speaking Community), and a national language in Namibia. German is most similar to other languages within the West Germanic language branch, including Afrikaans, Dutch, English, the Frisian languages, Low German (Low Saxon), Luxembourgish, Scots, and Yiddish. It also contains close similarities in vocabulary to Danish, Norwegian, and Swedish, although these belong to the North Germanic group. German is the second most widely spoken Germanic language after English.
+
+One of the major languages of the world, German is a native language to almost 100 million people worldwide and is spoken by a total of over 130 million people.[5] It is also widely taught as a foreign language, especially in Europe, where it is the third most taught foreign language after English and French, and the United States. German has also been influential in the fields of science and technology, where it is the second most commonly used scientific language and among the most widely used languages on websites. The German-speaking countries are ranked fifth in terms of annual publication of new books, with one tenth of all books (including e-books) in the world being published in German.
+
+German is an inflected language, with four cases for nouns, pronouns, and adjectives (nominative, accusative, genitive, dative); three genders (masculine, feminine, neuter); and two numbers (singular, plural). It has strong and weak verbs. The majority of its vocabulary derives from the ancient Germanic branch of the Indo-European language family, while a smaller share is partly derived from Latin and Greek, along with fewer words borrowed from French and Modern English.
+
+As a pluricentric language, the standardized variants of German are German, Austrian, and Swiss Standard High German. It is also notable for its broad spectrum of dialects, with many varieties existing in Europe and other parts of the world. Some of these non-standard varieties have become recognized and protected by regional or national governments. Due to the limited intelligibility between certain varieties and Standard High German, as well as the lack of an undisputed, scientific distinction between a "dialect" and a "language", some German varieties or dialect groups such as Bavarian and Low German (Plautdietsch) have been variously described as either "dialects" or separate languages.
+
+Classification
+The Germanic languages in Europe
+
+Modern Standard German is a West Germanic language in the Germanic branch of the Indo-European languages. The Germanic languages are traditionally subdivided into three branches, North Germanic, East Germanic, and West Germanic. The first of these branches survives in modern Danish, Swedish, Norwegian, Faroese, and Icelandic, all of which are descended from Old Norse. The East Germanic languages are now extinct, and Gothic is the only language in this branch which survives in written texts. The West Germanic languages, however, have undergone extensive dialectal subdivision and are now represented in modern languages such as English, German, Dutch, Yiddish, Afrikaans, and others.[6]

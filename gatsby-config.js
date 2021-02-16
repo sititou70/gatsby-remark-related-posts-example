@@ -1,14 +1,14 @@
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Starter Blog`,
+    title: `gatsby-remark-related-posts sample blog`,
     author: {
-      name: `Kyle Mathews`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      name: `sititou70`,
+      summary: `gatsby-remark-related-posts developer`,
     },
-    description: `A starter blog demonstrating what Gatsby can do.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.app/`,
+    description: `gatsby-remark-related-posts sample blog`,
+    siteUrl: `https://github.com/sititou70/gatsby-remark-related-posts`,
     social: {
-      twitter: `kylemathews`,
+      twitter: `sititou70`,
     },
   },
   plugins: [
@@ -42,27 +42,32 @@ module.exports = {
               wrapperStyle: `margin-bottom: 1.0725rem`,
             },
           },
-          `gatsby-remark-prismjs`, `gatsby-remark-copy-linked-files`,
-          `gatsby-remark-smartypants`, {
-            resolve: 'gatsby-remark-related-posts',
+          `gatsby-remark-prismjs`,
+          `gatsby-remark-copy-linked-files`,
+          `gatsby-remark-smartypants`,
+          {
+            resolve: "gatsby-remark-related-posts",
             options: {
               posts_dir: `${__dirname}/content/blog`,
             },
-          }
+          },
         ],
       },
     },
-    `gatsby-transformer-sharp`, `gatsby-plugin-sharp`, {
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
+    {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-          // trackingId: `ADD YOUR TRACKING ID HERE`,
+        // trackingId: `ADD YOUR TRACKING ID HERE`,
       },
     },
-    `gatsby-plugin-feed`, {
+    `gatsby-plugin-feed`,
+    {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `Gatsby Starter Blog`,
-        short_name: `GatsbyJS`,
+        name: `gatsby-remark-related-posts sample blog`,
+        short_name: `gatsby-remark-related-posts`,
         start_url: `/`,
         background_color: `#ffffff`,
         theme_color: `#663399`,
@@ -70,7 +75,8 @@ module.exports = {
         icon: `content/assets/gatsby-icon.png`,
       },
     },
-    `gatsby-plugin-react-helmet`, {
+    `gatsby-plugin-react-helmet`,
+    {
       resolve: `gatsby-plugin-typography`,
       options: {
         pathToConfigModule: `src/utils/typography`,
