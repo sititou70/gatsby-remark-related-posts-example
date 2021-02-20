@@ -54,16 +54,11 @@ const BlogPostTemplate = ({ data, _, location }) => {
       <nav>
         <h2>Related Posts</h2>
         <ol>
-          {data.markdownRemark.fields.relatedFileAbsolutePaths
-            .slice(0, 3)
-            .map(x =>
-              data.allMarkdownRemark.nodes.find(y => y.fileAbsolutePath === x)
-            )
-            .map(x => (
-              <li>
-                <Link to={x.fields.slug}>{x.frontmatter.title}</Link>
-              </li>
-            ))}
+          {data.relatedPosts.nodes.map(x => (
+            <li key={x.fields.slug}>
+              <Link to={x.fields.slug}>{x.frontmatter.title}</Link>
+            </li>
+          ))}
         </ol>
       </nav>
     </Layout>
@@ -73,7 +68,7 @@ const BlogPostTemplate = ({ data, _, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!) {
+  query BlogPostBySlug($slug: String!, $relatedFileAbsolutePaths: [String!]!) {
     site {
       siteMetadata {
         title
@@ -88,13 +83,11 @@ export const pageQuery = graphql`
         date(formatString: "MMMM DD, YYYY")
         description
       }
-      fields {
-        relatedFileAbsolutePaths
-      }
     }
-    allMarkdownRemark {
+    relatedPosts: allMarkdownRemark(
+      filter: { fileAbsolutePath: { in: $relatedFileAbsolutePaths } }
+    ) {
       nodes {
-        fileAbsolutePath
         fields {
           slug
         }

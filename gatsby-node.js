@@ -18,6 +18,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           nodes {
             fields {
               slug
+              relatedFileAbsolutePaths
             }
             frontmatter {
               title
@@ -29,7 +30,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
   )
 
   if (result.errors) {
-    reporter.panicOnBuild(`There was an error loading your blog posts`, result.errors)
+    reporter.panicOnBuild(
+      `There was an error loading your blog posts`,
+      result.errors
+    )
     return
   }
 
@@ -49,6 +53,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: blogPost,
         context: {
           slug: post.fields.slug,
+          relatedFileAbsolutePaths: post.fields.relatedFileAbsolutePaths.slice(
+            0,
+            3
+          ),
           previous,
           next,
         },
