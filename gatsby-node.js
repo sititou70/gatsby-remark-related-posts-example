@@ -53,10 +53,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         component: blogPost,
         context: {
           slug: post.fields.slug,
-          relatedFileAbsolutePaths: post.fields.relatedFileAbsolutePaths.slice(
-            0,
-            3
-          ),
+          relatedFileAbsolutePaths: post.fields.relatedFileAbsolutePaths,
           previous,
           next,
         },

@@ -11,18 +11,6 @@ npm i
 npm start
 ```
 
-open `http://localhost:8000/___graphql` and then execute the following query.
+and see the "Related Posts" section on each post page.
 
-```
-// query
-query {
-  allMarkdownRemark {
-    nodes {
-      fileAbsolutePath
-      fields {
-        relatedFileAbsolutePaths
-      }
-    }
-  }
-}
-```
+See `src/templates/blog-post.js` for queries and components that display related posts.

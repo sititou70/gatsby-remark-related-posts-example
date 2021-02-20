@@ -86,6 +86,7 @@ export const pageQuery = graphql`
     }
     relatedPosts: allMarkdownRemark(
       filter: { fileAbsolutePath: { in: $relatedFileAbsolutePaths } }
+      limit: 3
     ) {
       nodes {
         fields {
