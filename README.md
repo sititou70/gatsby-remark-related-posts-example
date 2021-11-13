@@ -1,6 +1,6 @@
 # gatsby-remark-related-posts-example
 
-The example blog repo of [gatsby-remark-related-posts](https://www.npmjs.com/package/gatsby-remark-related-posts)
+The example site of [gatsby-remark-related-posts](https://www.npmjs.com/package/gatsby-remark-related-posts)
 
 try:
 
