@@ -54,7 +54,7 @@ const BlogPostTemplate = ({ data, _, location }) => {
       <nav>
         <h2>Related Posts</h2>
         <ol>
-          {data.relatedPosts.nodes.map(x => (
+          {data.relatedMarkdownRemarks.posts.slice(0, 3).map(x => (
             <li key={x.fields.slug}>
               <Link to={x.fields.slug}>{x.frontmatter.title}</Link>
             </li>
@@ -68,13 +68,13 @@ const BlogPostTemplate = ({ data, _, location }) => {
 export default BlogPostTemplate
 
 export const pageQuery = graphql`
-  query BlogPostBySlug($slug: String!, $relatedFileAbsolutePaths: [String!]!) {
+  query BlogPostBySlug($id: String!) {
     site {
       siteMetadata {
         title
       }
     }
-    markdownRemark(fields: { slug: { eq: $slug } }) {
+    markdownRemark(id: { eq: $id }) {
       id
       excerpt(pruneLength: 160)
       html
@@ -84,16 +84,13 @@ export const pageQuery = graphql`
         description
       }
     }
-    relatedPosts: allMarkdownRemark(
-      filter: { fileAbsolutePath: { in: $relatedFileAbsolutePaths } }
-      limit: 3
-    ) {
-      nodes {
-        fields {
-          slug
-        }
+    relatedMarkdownRemarks(parent: { id: { eq: $id } }) {
+      posts {
         frontmatter {
           title
+        }
+        fields {
+          slug
         }
       }
     }

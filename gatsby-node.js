@@ -16,9 +16,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
           limit: 1000
         ) {
           nodes {
+            id
             fields {
               slug
-              relatedFileAbsolutePaths
             }
             frontmatter {
               title
@@ -52,8 +52,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         path: post.fields.slug,
         component: blogPost,
         context: {
-          slug: post.fields.slug,
-          relatedFileAbsolutePaths: post.fields.relatedFileAbsolutePaths,
+          id: post.id,
           previous,
           next,
         },
