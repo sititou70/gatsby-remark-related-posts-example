@@ -6567,14 +6567,14 @@
     "parse-numeric-range" "^0.0.2"
     "unist-util-visit" "^1.4.1"
 
-"gatsby-remark-related-posts@^2.0.0":
-  "integrity" "sha512-zrIDEJsNEDtMBezRSBvh/FCI6gLl+QAaymSA3JtQakepZQTbatwbD4H7MnsagpI+8lm6gUouzo9pEqA1v6NA/w=="
-  "resolved" "https://registry.npmjs.org/gatsby-remark-related-posts/-/gatsby-remark-related-posts-2.0.0.tgz"
-  "version" "2.0.0"
+"gatsby-remark-related-posts@^2.0.1":
+  "integrity" "sha512-oFnA4UJLHm1dc2R7tosU0uzHPoNnJPMDrkw5OLRwz5ok/1lgWxyrUWxuokXnIikaZnCNwHUrlZqtx6KOQEnBwQ=="
+  "resolved" "https://registry.npmjs.org/gatsby-remark-related-posts/-/gatsby-remark-related-posts-2.0.1.tgz"
+  "version" "2.0.1"
   dependencies:
     "compute-cosine-similarity" "^1.0.0"
     "kuromoji" "^0.1.2"
-    "natural" "^5.1.1"
+    "natural" "^5.1.11"
 
 "gatsby-remark-responsive-iframe@^2.11.0":
   "integrity" "sha512-qqrYfUb4+9VhndBeEaKrhiyyKIReAK4BHL3/8ZCtFDem5ZQQd5pUdgYhExRLcoGxzwJrqVxI6+dtT/RoXLqC/g=="
@@ -9743,7 +9743,7 @@
   "resolved" "https://registry.npmjs.org/natural-compare/-/natural-compare-1.4.0.tgz"
   "version" "1.4.0"
 
-"natural@^5.1.1":
+"natural@^5.1.11":
   "integrity" "sha512-ecITGKjUNXxj6+g0oD0nEzYgmUxK3WRbye3zy1OUmRhgWx04BEQGILc5LnqpdYpKsA+D3CDDJMImyX70Li8dyw=="
   "resolved" "https://registry.npmjs.org/natural/-/natural-5.1.11.tgz"
   "version" "5.1.11"
